@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/906c5a8b2a.js" crossorigin="anonymous"></script>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- ScrollReveal -->
+    <script src="./js/scrollreveal.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/icon.ico">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Link a mis estilos Css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CV</title>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+
+    <!-- Seleccionar Idiomas -->
+    <div class="select">
+        <div class="flecha" title="Cambiar Idioma"><i class="fas fa-chevron-circle-left"></i></div>
+        <div class="select-idioma">
+            <p class="lang" key="tra-cam">Cambiar</p>
+            <hr>
+            <button class="traducir" id="es"><img src="./img/bandera-mexico.png" alt="Español"></button>
+            <button class="traducir" id="en"><img src="./img/bandera-gran.png" alt="Ingles"></button>
+        </div>
+    </div>
+
+    <!-- Scroll Top -->
+    <div class="scrolltop" onclick="scrollToTop();"><i class="fas fa-chevron-up"></i></div>
+    
+    <div class="contenedor">
+        <!-- Seccion de Header Info -->
+        <header>
+            <div class="nombre animate__animated animate__backInLeft">
+                <p>Jose Armando Cano Meza</p>
+            </div>
+            <div class="foto animate__animated animate__backInDown">
+                <img src="./img/yo2.png" alt="Yo">
+            </div>
+            <div class="front animate__animated animate__backInRight">
+                <p class="lang" key="tra-des">Desarrollador Front End</p>
+            </div>
+    
+            <img src="./img/fondogeneral.jpg" alt="Fondo">
+            <!-- <video src="./videos/video.mp4" onloadedmetadata="this.muted=true" autoplay loop muted></video> -->
+        </header>
+
+        <!-- Seccion de Información -->
+        <section class="info">
+            <div class="mi-info">
+                <svg><rect></rect></svg>
+                <div class="mi">
+                    <i class="fas fa-envelope"></i>
+                    <p>armando.cano3312 @gmail.com</p>
+                </div>
+            </div>
+            <div class="mi-info">
+                <svg><rect></rect></svg>
+                <div class="mi">
+                    <i class="fas fa-phone"></i>
+                    <p>55-3719-2438</p>
+                </div>
+            </div>
+            <div class="mi-info">
+                <svg><rect></rect></svg>
+                <div class="mi">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Iztapalapa, CDMX</p>
+                </div>
+            </div>
+            <div class="mi-info">
+                <svg><rect></rect></svg>
+                <div class="mi">
+                    <i class="fas fa-flag"></i>
+                    <p class="lang" key="tra-edad">Mexicano de 22 años</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de Objetivo -->
+        <section class="obj">
+            <div class="content">
+                <div class="content-obj">
+                    <h1 class="lang" key="tra-obj">Objetivo</h1>
+                    <p class="lang" key="tra-obj-text">Gestionar un crecimiento personal y 
+                        profesional en base a mi desempeño
+                        laboral, superando todas las expectativas
+                        con actitud entusiasta y positiva, con el 
+                        fin de cumplir mis metas profesionales y 
+                        personales.
+                        </p>
+                </div>
+                <div class="img-obj">
+                    <img src="./img/objetivo.jpg" alt="Objetivo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de Experiencia Laboral -->
+        <div class="titExp">
+            <h2 class="lang" key="tra-exp">Experiencia Laboral</h2>
+        </div>
+
+        <section class="exp">
+            <div class="exp1">
+                <div class="info-exp1">
+                    <h2>Textil Romatex</h2>
+                    <h3 class="lang" key="tra-exp1-text1">Área de Electrónica</h3>
+                    <h3 class="mod lang" key="tra-exp1-text2">Agosto 2017 - Enero 2018</h3>
+                    <h4 class="lang" key="tra-exp1-text3">Labores desempeñadas:</h4>
+                    <p class="lang" key="tra-exp1-text4">Reparación de Tableros 
+                        Electrónicos, Inventario de 
+                        Alamacen Electrónica y Analisis de 
+                        Circuitos.</p>
+                </div>
+            </div>
+            <div class="exp2">
+                <div class="info-exp2">
+                    <h2>DELN Control</h2>
+                    <h3 class="lang" key="tra-exp2-text1">Área de Almacén</h3>
+                    <h3 class="mod2 lang" key="tra-exp2-text2">Agosto - Diciembre 2016</h3>
+                    <h4 class="lang" key="tra-exp2-text3">Labores desempeñadas:</h4>
+                    <p class="lang" key="tra-exp2-text4"> Recepción de Material, Inventario y Entrega de Material.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de Estudios -->
+        <div class="titEst">
+            <h2 class="lang" key="tra-est">Estudios</h2>
+        </div>
+
+        <section class="estudios">
+            <!-- Card 1 -->
+            <div class="card1">
+                <div class="front1 active">
+                    <div class="more"><i class="fas fa-info-circle"></i></div>
+                    <div class="content-card">
+                        <img src="./img/beduFondo.png" alt="BEDU">
+                        <div class="info-est">
+                            <p class="lang" key="tra-est1-esc1">CURSO</p>
+                            <p>2020 - 2021</p>
+                            <p class="lang" key="tra-est1-esc2">Desarrollo Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="back1">
+                    <div class="go-back"><i class="fas fa-chevron-circle-left"></i></div>
+                    <div class="back-content1">
+                        <img src="./img/beduFondo2.png" alt="BEDU">
+                        <div class="back-inf1">
+                            <p class="lang" key="tra-est1-esc3">Somos una plataforma de especialización en habilidades emergentes con el objetivo de preparar profesionales y empresas para los retos del futuro y los que se viven a diario.</p>
+                            <a class="lang" key="tra-est1-esc4" href="https://bedu.org/" target="_blank">Click aqui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card2">
+                <div class="front2 active">
+                    <div class="more2"><i class="fas fa-info-circle"></i></div>
+                    <div class="content-card2">
+                        <img src="./img/uaehFondo.jpg" alt="UAEH">
+                        <div class="info-est2">
+                            <p>UAEH</p>
+                            <p class="lang" key="tra-est2-esc1">2018 - En curso (9)</p>
+                            <p class="lang" key="tra-est2-esc2">Ingeniería en Electrónica</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="back2">
+                    <div class="go-back2"><i class="fas fa-chevron-circle-left"></i></div>
+                    <div class="back-content2">
+                        <img src="./img/uaehfondo2.jpg" alt="UAEH">
+                        <div class="back-inf2">
+                            <p class="lang" key="tra-est2-esc3">La Universidad Autónoma del Estado de Hidalgo (UAEH), es una institución pública de educación, medio superior, superior y posgrado, ubicada en el estado de Hidalgo, México.</p>
+                            <a class="lang" key="tra-est2-esc4" href="https://www.uaeh.edu.mx/" target="_blank">Click aqui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card3">
+                <div class="front3 active">
+                    <div class="more3"><i class="fas fa-info-circle"></i></div>
+                    <div class="content-card3">
+                        <img src="./img/udemy.jpg" alt="Udemy">
+                        <div class="info-est3">
+                            <p class="lang" key="tra-est1-esc1">CURSO</p>
+                            <p class="lang" key="tra-est1-in">2021</p>
+                            <p class="lang" key="tra-est3-esc1">Master en Python</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="back3">
+                    <div class="go-back3"><i class="fas fa-chevron-circle-left"></i></div>
+                    <div class="back-content3">
+                        <img src="./img/backudemy.jpg" alt="Udemy">
+                        <div class="back-inf3">
+                            <p class="lang" key="tra-est3-esc3">La misión de Udemy es crear nuevas posibilidades. Nuestra tienda virtual globalofrece una amplia biblioteca en varios idiomas que incluye miles de cursos impartidos por expertos del mundo real.</p>
+                            <a class="lang" key="tra-est1-esc4" href="https://bedu.org/" target="_blank">Click aqui</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de Idiomas -->
+        <div class="titIdi">
+            <h2 class="lang" key="tra-idi">Idiomas</h2>
+        </div>
+
+        <section class="idiomas">
+            <div class="español">
+                <div class="info-esp">
+                    <p class="lang" key="tra-idi-esp">Español</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="natal lang" key="tra-idi-esp2">Nativo</p>
+                </div>
+            </div>
+            <div class="ingles">
+                <div class="info-ing">
+                    <p class="lang" key="tra-idi-ing">Ingles</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="basico lang" key="tra-idi1-ing">Básico</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de Tecnologias -->
+        <div class="titTec">
+            <h2 class="lang" key="tra-tec">Tecnologias</h2>
+        </div>
+
+        <section class="tecno">
+            <div class="programas">
+                <div class="programa html active"  data-filter="programa1"><i class="fab fa-html5"></i></div>
+                <div class="programa css"  data-filter="programa2"><i class="fab fa-css3-alt"></i></div>
+                <div class="programa js" data-filter="programa3"><i class="fab fa-js-square"></i></div>
+                <div class="programa boot" data-filter="programa4"><i class="fab fa-bootstrap"></i></div>
+                <div class="programa sass" data-filter="programa5"><i class="fab fa-sass"></i></div>
+                <div class="programa reac" data-filter="programa6"><i class="fab fa-react"></i></div>
+                <div class="programa jqu" data-filter="programa7"><img src="./img/jquery.png" alt="Jquery"></i></div>
+                <div class="programa pyt" data-filter="programa8"><img src="./img/python.png" alt="Python"></i></div>
+                <div class="programa dj" data-filter="programa14"><img src="./img/django.png" alt="Django"></div>
+                <div class="programa dat" data-filter="programa9"><i class="fas fa-database"></i></div>
+                <div class="programa git" data-filter="programa10"><i class="fab fa-git-alt"></i></div>
+                <div class="programa gith" data-filter="programa11"><i class="fab fa-github-square"></i></div>
+                <div class="programa vsc" data-filter="programa12"><img src="./img/vscode.png" alt="VS Code"></div>
+                <div class="programa sub" data-filter="programa13"><img src="./img/sublime.png" alt="Sublime Text"></div>
+                <div class="programa xd" data-filter="programa15"><img src="./img/adobeXd.png" alt="AdobeXd"></div>
+                <div class="programa offi" data-filter="programa16"><img src="./img/office.png" alt="Office"></div>
+            </div>
+
+            <div class="info-programas">
+                <!-- HTML -->
+                <div class="info-programa programa1">
+                    <h1>HTML</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text1">Experiencia: 3 años</p>
+                </div>
+                <!-- CSS -->
+                <div class="info-programa programa2">
+                    <h1>CSS</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text2">Experiencia: 3 años</p>
+                </div>
+                <!-- JS -->
+                <div class="info-programa programa3">
+                    <h1>JavaScript</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text3">Experiencia: 2 años</p>
+                </div>
+                <!-- Bootstrap -->
+                <div class="info-programa programa4">
+                    <h1>Bootstrap</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text4">Experiencia: 1 año</p>
+                </div>
+                <!-- Sass -->
+                <div class="info-programa programa5">
+                    <h1>SASS</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text5">Experiencia: 1 año</p>
+                </div>
+                <!-- React -->
+                <div class="info-programa programa6">
+                    <h1>ReactJs</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text6">Experiencia: 9 meses</p>
+                </div>
+                <!-- jQuery -->
+                <div class="info-programa programa7">
+                    <h1>jQuery</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text7">Experiencia: 6  meses</p>
+                </div>
+                <!-- Python -->
+                <div class="info-programa programa8">
+                    <h1>Python</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text8">Experiencia: 7 meses</p>
+                </div>
+                <!-- Django -->
+                <div class="info-programa programa14">
+                    <h1>Django</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text14">Experiencia: 5 meses</p>
+                </div>
+                <!-- SQL -->
+                <div class="info-programa programa9">
+                    <h1>SQL</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text9">Experiencia: 4 meses</p>
+                </div>
+                <!-- Git -->
+                <div class="info-programa programa10">
+                    <h1>Git</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i> 
+                    </div>
+                    <p class="lang" key="tra-tec-text10">Experiencia: 1 año</p>
+                </div>
+                <!-- GitHub -->
+                <div class="info-programa programa11">
+                    <h1>GitHub</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text11">Experiencia: 1 año</p>
+                </div>
+                <!-- VS Code -->
+                <div class="info-programa programa12">
+                    <h1>Visual Studio Code</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text12">Experiencia: 2 años</p>
+                </div>
+                <!-- Sublime Text -->
+                <div class="info-programa programa13">
+                    <h1>Sublime Text</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text13">Experiencia: 3 años</p>
+                </div>
+                <!-- Adobe XD -->
+                <div class="info-programa programa15">
+                    <h1>Adobe XD</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text15">Experiencia: 6 meses</p>
+                </div>
+                <!-- Office -->
+                <div class="info-programa programa16">
+                    <h1>Office</h1>
+                    <div class="rancking">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="lang" key="tra-tec-text16">Experiencia: 8 años</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de Zonas -->
+        <div class="titZon">
+            <h2 class="lang" key="tra-zon">Zonas</h2>
+        </div>
+
+        <section class="zonas">
+           <!-- Swiper -->
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2" >
+                <div class="swiper-wrapper">
+                    <!-- Zona Python -->
+                    <div class="swiper-slide">
+                        <img src="./img/fondo-python.jpg" />
+                        <div class="zona-content">
+                            <div class="zona-tit">
+                                <i class="fab fa-python"></i>
+                                <h2>Python</h2>
+                            </div>
+                            <div class="zona-items">
+                                <figure>
+                                    <img src="./img/pydjango-item.png" alt="Django">
+                                    <div class="capa">
+                                        <h3>Django</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/pyflask-item.png" alt="Flask">
+                                    <div class="capa">
+                                        <h3>Flask</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/pytk-item.png" alt="Tkinter">
+                                    <div class="capa">
+                                        <h3>Tkinter</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/pysql-item.jpg" alt="MySQL">
+                                    <div class="capa">
+                                        <h3>MySQL</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/pysqlite-item.jpeg" alt="SQLite">
+                                    <div class="capa">
+                                        <h3>SQLite</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Zona Js -->
+                    <div class="swiper-slide">
+                        <img src="./img/fondo-js.png" />
+                        <div class="zona-content">
+                            <div class="zona-tit">
+                                <i class="fab fa-js-square"></i>
+                                <h2>JavaScript</h2>
+                            </div>
+                            <div class="zona-items">
+                                <figure>
+                                    <img src="./img/jquery-item.png" alt="Jquery">
+                                    <div class="capa">
+                                        <h3>Jquery</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/react-item.jpg" alt="React Js">
+                                    <div class="capa">
+                                        <h3>React Js</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Zona Css -->
+                    <div class="swiper-slide">
+                        <img src="./img/fondo-css.jpg" />
+                        <div class="zona-content">
+                            <div class="zona-tit">
+                                <i class="fab fa-css3-alt"></i>
+                                <h2>Css</h2>
+                            </div>
+                            <div class="zona-items">
+                                <figure>
+                                    <img src="./img/flexbox-item.png" alt="FlexBox">
+                                    <div class="capa">
+                                        <h3>FlexBox</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/grid-item.png" alt="Grid">
+                                    <div class="capa">
+                                        <h3>Grid</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/sass-item.png" alt="Sass">
+                                    <div class="capa">
+                                        <h3>Sass</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Zona Git -->
+                    <div class="swiper-slide">
+                        <img src="./img/fondo-git.png" />
+                        <div class="zona-content">
+                            <div class="zona-tit">
+                                <i class="fab fa-git-alt"></i>
+                                <h2>Git</h2>
+                            </div>
+                            <div class="zona-items">
+                                <figure>
+                                    <img src="./img/gitterminal-item.png" alt="Terminal">
+                                    <div class="capa">
+                                        <h3>Terminal Git</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/gitkraken-item.jpeg" alt="GitKraken">
+                                    <div class="capa">
+                                        <h3>Git Kraken</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/github-item.png" alt="GitHub">
+                                    <div class="capa">
+                                        <h3>GitHub</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/gitflow-item.png" alt="GitFlow">
+                                    <div class="capa">
+                                        <h3>Git Flow</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/markdown-item.png" alt="MarkDown">
+                                    <div class="capa">
+                                        <h3>MarkDown</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Zona UI -->
+                    <div class="swiper-slide">
+                        <img src="./img/fondo-ui.jpg" />
+                        <div class="zona-content">
+                            <div class="zona-tit">
+                                <i class="fab fa-figma"></i>
+                                <h2>UI</h2>
+                            </div>
+                            <div class="zona-items">
+                                <figure>
+                                    <img src="./img/xd-item.jpg" alt="Adobe XD">
+                                    <div class="capa">
+                                        <h3>Adobe XD</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/gif-figma.gif" alt="Figma">
+                                    <div class="capa">
+                                        <h3>Figma</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                                <figure>
+                                    <img src="./img/ae-item.png" alt="Ae">
+                                    <div class="capa">
+                                        <h3>After Affects</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Officia</p>
+                                    </div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/fondo-python.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/fondo-js.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/fondo-css.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/fondo-git.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/fondo-ui.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de Habilidades -->
+        <div class="titHab">
+            <h2 class="lang" key="tra-hab">Habilidades</h2>
+        </div>
+
+        <section class="skills">
+            <div class="fondo"></div>
+            <div class="img-skill">
+                <img src="./img/front-end-skills2.jpg" alt="Skills">
+            </div>
+            <div class="inf-skill">
+                <ul>
+                    <li>Responsive Design</li>
+                    <li>UI Fundamentals</li>
+                    <li>Atomic Design</li>
+                    <li>CSS Grid</li>
+                    <li>Flexbox</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seccion de Frase -->
+        <section class="frase">
+            <div class="hexagon">
+                <div class="shape">
+                    <img src="./img/frase1.jpg" alt="Albert Einstein">
+                    <div class="inf-frase">
+                        <div>
+                            <p>"<span class="lang" key="tra-fra1">Si buscas resultados distintos, no hagas siempre lo mismo</span>".</p>
+                            <small>- Albert Einstein</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="shape">
+                    <img src="./img/frase2.jpg" alt="Brian Kernighan">
+                    <div class="inf-frase">
+                        <div>
+                            <p>"<span class="lang" key="tra-fra2">Controlar la complejidad es la esencia de la programacion</span>".</p>
+                            <small>- Brian Kernighan</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="shape">
+                    <img src="./img/frase3.jpg" alt="Ryan Dahl">
+                    <div class="inf-frase">
+                        <div>
+                            <p>"<span class="lang" key="tra-fra3">Nunca se puede entender todo. Pero hay que esforzarse por entender el sistema</span>".</p>
+                            <small>- Ryan Dahl</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion de Contactos -->
+        <div class="titCon">
+            <h2 class="lang" key="tra-con">Contactos</h2>
+        </div>
+
+        <section class="contact">
+            <div class="bgPulse">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=+525537192438&text=Hola" target="_blank">
+                        <span></span>	
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-whatsapp"></span>		
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://github.com/JsArmandoCano" target="_blank">
+                        <span></span>	
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-github"></span>		
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.linkedin.com/in/jose-armando-cano-meza/" target="_blank">
+                        <span></span>	
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-linkedin-in"></span>		
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Link Codigo en JavaScript -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
